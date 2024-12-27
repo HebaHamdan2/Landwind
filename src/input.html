@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-<nav class="flex items-center justify-between gap-8 max-w-[1280px] w-[90%]
- m-auto py-6">
+<nav class="flex items-center justify-between gap-8 wrapper py-6">
   <div class="flex items-center gap-8 justify-between w-full 2md:w-fit">
     <div class="w-[120px] sm:w-[156px]">
         <img class="w-full" src="assets/Logo.svg" alt="Logo">
@@ -27,22 +26,45 @@
     </ul>
     <div class="flex gap-8 items-center ">
         <a class="capitalize text-mainText">log in</a>
-        <a class="capitalize text-white bg-primary rounded-lg py-2 px-3 ">get started</a>
+        <a class="capitalize button py-2 px-3 ">get started</a>
     </div>
 </div>
 </nav>
-<script>
-   const menuToggel=document.getElementById("menu-toggel");
-   const menu=document.getElementById("menu");
-   
-   menuToggel.addEventListener("click",()=>{
-    menu.classList.toggle("hidden");
-    if(menu.classList.contains("hidden")){
-        menuToggel.innerHTML=`<i class="material-icons">menu</i>`
-    }else{
-        menuToggel.innerHTML=`<i class="material-icons">close</i>`
-    }
-   })
-</script>
+<header class="wrapper py-16">
+<div class="flex flex-col 2md:flex-row gap-24 items-center justify-between">
+    <div class="w-full 2md:w-[50%]">
+        <h1 class="text-mainText text-4xl 2md:text-6xl font-black mb-6">Building digital products & brands.</h1>
+        <p class="text-secondaryText text-xl">Here at flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+       <div class="flex mt-10 gap-4">
+        <button class="button px-5 py-3">Start 30 day free trial</button>
+        <button class=" px-5 py-3 border border-[#E5E7EB] rounded-lg">Pricing & FAQ</button>
+    </div>
+    </div>
+    <div class="w-full 2md:w-[40%]">
+        <img class="w-full" src="./assets/marketing-strategy 1.svg" alt="marketing">
+    </div>
+</div>
+<div class="grid grid-cols-2 2md:grid-cols-3 xl:grid-cols-6 gap-3">
+<img src="./assets/Google.svg" alt="google">
+<img src="./assets/Microsoft.svg" alt="Microsoft">
+<img src="./assets/Spotify.svg" alt="Spotify">
+<img src="./assets/Mailchimp.svg" alt="Mailchimp">
+<img src="./assets/Airbnb.svg" alt="Airbnb">
+<img src="./assets/uber.svg" alt="uber">
+</div>
+</header>
 </body>
+<script>
+    const menuToggel=document.getElementById("menu-toggel");
+    const menu=document.getElementById("menu");
+    
+    menuToggel.addEventListener("click",()=>{
+     menu.classList.toggle("hidden");
+     if(menu.classList.contains("hidden")){
+         menuToggel.innerHTML=`<i class="material-icons">menu</i>`
+     }else{
+         menuToggel.innerHTML=`<i class="material-icons">close</i>`
+     }
+    })
+ </script>
 </html>
