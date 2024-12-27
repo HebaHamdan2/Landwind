@@ -4,24 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-<nav class="flex items-center gap-8">
+<nav class="flex items-center justify-between gap-8 max-w-[1280px] w-[90%]
+ m-auto py-6">
+  <div class="flex items-center gap-8 justify-between w-full 2md:w-fit">
     <div class="w-[120px] sm:w-[156px]">
         <img class="w-full" src="assets/Logo.svg" alt="Logo">
     </div>
-    <ul class="flex gap-8">
+    <div class="block 2md:hidden cursor-pointer" id="menu-toggel">
+        <i class="material-icons">menu</i>
+    </div></div>
+<div class="2md:flex items-center w-full justify-between flex-col 2md:flex-row absolute 2md:static top-[80px] bg-white px-10 py-3 left-0 shadow 2md:p-0 2md:shadow-none" id="menu">
+    <ul class="flex gap-8 flex-col 2md:flex-row">
         <li><a class="text-mainText font-medium capitalize">compony</a></li>
         <li><a class="text-mainText font-medium capitalize" >Marketplace</a></li>
         <li><a class="text-mainText font-medium capitalize" >features</a></li>
         <li><a class="text-mainText font-medium capitalize" >team</a></li>
         <li><a class="text-mainText font-medium capitalize" ></a></li>
     </ul>
-    <div class="flex gap-8 items-center">
+    <div class="flex gap-8 items-center ">
         <a class="capitalize text-mainText">log in</a>
         <a class="capitalize text-white bg-primary rounded-lg py-2 px-3 ">get started</a>
     </div>
+</div>
 </nav>
+<script>
+   const menuToggel=document.getElementById("menu-toggel");
+   const menu=document.getElementById("menu");
+   
+   menuToggel.addEventListener("click",()=>{
+    menu.classList.toggle("hidden");
+    if(menu.classList.contains("hidden")){
+        menuToggel.innerHTML=`<i class="material-icons">menu</i>`
+    }else{
+        menuToggel.innerHTML=`<i class="material-icons">close</i>`
+    }
+   })
+</script>
 </body>
 </html>
