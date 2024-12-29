@@ -556,6 +556,15 @@ video {
   display: none;
 }
 
+h2{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  line-height: 1.25;
+  --tw-text-opacity: 1;
+  color: rgb(17 25 40 / var(--tw-text-opacity, 1));
+}
+
 .wrapper{
   margin: auto;
   width: 90%;
@@ -568,6 +577,15 @@ video {
   background-color: rgb(126 58 242 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.heading{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  --tw-text-opacity: 1;
+  color: rgb(17 25 40 / var(--tw-text-opacity, 1));
 }
 
 .absolute{
@@ -739,6 +757,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -749,13 +772,50 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+
+.pb-24{
+  padding-bottom: 6rem;
+}
+
+.pb-3{
+  padding-bottom: 0.75rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
+}
+
 .pt-24{
   padding-top: 6rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
+}
+
+.pt-\[126px\]{
+  padding-top: 126px;
 }
 
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xl{
@@ -771,6 +831,10 @@ video {
   font-weight: 800;
 }
 
+.font-light{
+  font-weight: 300;
+}
+
 .font-medium{
   font-weight: 500;
 }
@@ -783,14 +847,28 @@ video {
   line-height: 1.25;
 }
 
+.text-\[\#6B7280\]{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
 .text-mainText{
   --tw-text-opacity: 1;
   color: rgb(17 25 40 / var(--tw-text-opacity, 1));
 }
 
+.text-primary{
+  --tw-text-opacity: 1;
+  color: rgb(126 58 242 / var(--tw-text-opacity, 1));
+}
+
 .text-secondaryText{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\]{
+  color: ;
 }
 
 .shadow{
@@ -808,6 +886,12 @@ html,body{
 @media (min-width: 640px){
   .sm\:w-\[156px\]{
     width: 156px;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -868,6 +952,10 @@ html,body{
 }
 
 @media (min-width: 1280px){
+  .xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .xl\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
