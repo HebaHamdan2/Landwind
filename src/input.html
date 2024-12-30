@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
@@ -162,9 +164,56 @@
         
         </div>
     </section>
+    <section class="bg-[#F9FAFB]">
+       <div class="wrapper py-24">
+        <div class="carousel w-full">
+            <div id="item1" class="carousel-item w-full">
+           <div class="flex flex-col items-center justify-center gap-6">
+            <img src="./assets/Vector (4).svg" alt="quots">
+            <p class="leading-relaxed text-2xl font-semibold w-full lg:w-[63%] m-auto text-center">"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+            <div class="flex gap-[14px] items-center">
+                <img src="./assets/Avatar.png" alt="Avatar">
+                <span>Micheal Gough /</span>
+                <span class="text-center text-[#6B7280]">CEO at Google</span>
+            </div>
+           </div>
+            </div>
+            <div id="item2" class="carousel-item w-full">
+                <div class="flex flex-col items-center justify-center gap-6">
+                    <img src="./assets/Vector (4).svg" alt="quots">
+                    <p class="leading-relaxed text-2xl font-semibold w-full lg:w-[63%] m-auto text-center">1"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                    <div class="flex gap-[14px] items-center">
+                        <img src="./assets/Avatar.png" alt="Avatar">
+                        <span>Micheal Gough /</span>
+                        <span class="text-center text-[#6B7280]">CEO at Google</span>
+                    </div>
+                   </div>
+            </div>
+            <div id="item3" class="carousel-item w-full">
+                <div class="flex flex-col items-center justify-center gap-6">
+                    <img src="./assets/Vector (4).svg" alt="quots">
+                    <p class="leading-relaxed text-2xl font-semibold w-full lg:w-[63%] m-auto text-center">2"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                    <div class="flex gap-[14px] items-center">
+                        <img src="./assets/Avatar.png" alt="Avatar">
+                        <span>Micheal Gough /</span>
+                        <span class="text-center text-[#6B7280]">CEO at Google</span>
+                    </div>
+                   </div>
+            </div>
+           
+          </div>
+          <div class="flex w-full justify-center gap-2 py-2 mt-6">
+            <a href="#item1" class="size-[10px] rounded-full bg-slate-300"></a>
+            <a href="#item2" class="size-[10px] rounded-full bg-slate-300"></a>
+            <a href="#item3" class="size-[10px] rounded-full bg-slate-300"></a>
+          </div>
+       </div>
+    </section>
 
 </main>
 </body>
+<script src="https://cdn.tailwindcss.com"></script>
+
 <script>
     const menuToggel=document.getElementById("menu-toggel");
     const menu=document.getElementById("menu");
