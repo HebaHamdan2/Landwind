@@ -10,7 +10,8 @@ module.exports = {
       colors:{
         primary:'#7E3AF2',
         secondaryText:'#6B7280',
-        mainText:'#111928'
+        mainText:'#111928',
+        secondarybg:'#F9FAFB',
       }, fontFamily:{
         Inter:['Inter','sans-serif'],
        },
