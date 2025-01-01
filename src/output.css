@@ -565,15 +565,6 @@ h2{
   color: rgb(17 24 39 / var(--tw-text-opacity, 1));
 }
 
-li{
-  padding-bottom: 1rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  text-transform: capitalize;
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
-}
-
 .wrapper{
   margin: auto;
   width: 90%;
@@ -595,6 +586,15 @@ li{
   line-height: 1.25;
   --tw-text-opacity: 1;
   color: rgb(17 25 40 / var(--tw-text-opacity, 1));
+}
+
+.contact{
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
 .collapse{
@@ -711,6 +711,10 @@ li{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -743,6 +747,10 @@ li{
   gap: 1rem;
 }
 
+.gap-5{
+  gap: 1.25rem;
+}
+
 .gap-6{
   gap: 1.5rem;
 }
@@ -759,8 +767,16 @@ li{
   gap: 14px;
 }
 
+.gap-\[23px\]{
+  gap: 23px;
+}
+
 .gap-\[74px\]{
   gap: 74px;
+}
+
+.gap-12{
+  gap: 3rem;
 }
 
 .rounded-full{
@@ -854,6 +870,10 @@ li{
   padding-bottom: 1.5rem;
 }
 
+.pb-0{
+  padding-bottom: 0px;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -894,10 +914,6 @@ li{
   padding-top: 126px;
 }
 
-.pb-0{
-  padding-bottom: 0px;
-}
-
 .text-center{
   text-align: center;
 }
@@ -910,6 +926,11 @@ li{
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg{
@@ -941,6 +962,10 @@ li{
 
 .font-medium{
   font-weight: 500;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .font-semibold{
@@ -1027,6 +1052,10 @@ html,body{
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:gap-\[100px\]{
+    gap: 100px;
   }
 }
 
