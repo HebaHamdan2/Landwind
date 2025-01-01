@@ -11,6 +11,9 @@ html,body{
     h2{
         @apply leading-tight text-4xl font-extrabold text-gray-900
     }
+    li{
+        @apply text-base text-secondaryText capitalize pb-4 
+    }
 }
 
 /* only compile when use it on html */
